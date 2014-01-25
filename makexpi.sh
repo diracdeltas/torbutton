@@ -17,6 +17,7 @@ cd ../..
 
 # create .xpi
 echo ---------- create $APP_NAME.xpi ----------
+mkdir -p pkg/
 cd src
 echo zip -X -9r ../pkg/$XPI_NAME ./ -x "chrome/*" -x "*.diff" -x "*.svn/*"
 zip -X -9r ../pkg/$XPI_NAME ./ -x "*.svn/*" -x "*.diff" -x "components/torRefSpoofer.js" #-x "chrome/*"
