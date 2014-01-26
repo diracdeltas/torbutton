@@ -1385,6 +1385,10 @@ function torbutton_send_ctrl_cmd(command) {
 
 // Bug 1506 P4: Needed for New Identity.
 function torbutton_new_identity() {
+  torbutton_old_identity_state.clear();
+  if (window.confirm("Would you like to save the currently open tabs?")) {
+    torbutton_old_identity_state.should_save_tabs = true;
+  }
   try {
     torbutton_do_new_identity();
   } catch(e) {
@@ -1411,6 +1415,19 @@ function torbutton_new_identity() {
  *
  * XXX: intermediate SSL certificates are not cleared.
  */
+
+// Bug 9906/10400: For convenience purposes only, offer users an option to
+// remember the currently open tabs so that they can be re-opened after New
+// Identity. TODO: warn that this could be dangerous.
+var torbutton_old_identity_state = {
+  should_save_tabs: false,
+  saved_tabs: [],
+  clear: function() {
+    this.should_save_tabs = false;
+    this.saved_tabs = [];
+  }
+}
+
 // Bug 1506 P4: Needed for New Identity.
 function torbutton_do_new_identity() {
   var obsSvc = Components.classes["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
@@ -1610,12 +1627,36 @@ function torbutton_do_new_identity() {
   // Open a new window with the TBB check homepage
   // In Firefox >=19, can pass {private: true} but we do not need it because
   // we have browser.privatebrowsing.autostart = true
-  OpenBrowserWindow();
+  var tois = torbutton_old_identity_state;
+  var awin = OpenBrowserWindow();
 
   torbutton_log(3, "New identity successful");
 
+  // Restore the previously open tabs if the user has chosen this option
+  // after clearing identity
+  if (tois.should_save_tabs) {
+    awin.addEventListener("load", function () {
+      torbutton_maybe_restore_tabs(awin, tois.saved_tabs);
+    });
+  }
+
   // Close the current window for added safety
   window.close();
+}
+
+function torbutton_maybe_restore_tabs(awin, tabs) {
+  torbutton_log(3, "Got tabs to restore: "+tabs.length);
+  var gb = awin.getBrowser();
+  while (tabs.length > 0) {
+    var url = tabs.pop();
+    try {
+      gb.addTab(url);
+    } catch(e) {
+      torbutton_log(4, "Error restoring tab: "+e);
+    }
+  }
+  torbutton_log(3, "Finished opening saved tabs");
+  torbutton_old_identity_state.clear();
 }
 
 function torbutton_clear_image_caches()
@@ -1995,6 +2036,7 @@ function torbutton_close_on_toggle(mode, newnym) {
         .getService(Components.interfaces.nsIWindowMediator);
     var enumerator = wm.getEnumerator("navigator:browser");
     var closeWins = new Array();
+    var openUrls = new Array();
     while(enumerator.hasMoreElements()) {
         var win = enumerator.getNext();
         var browser = win.getBrowser();
@@ -2021,6 +2063,7 @@ function torbutton_close_on_toggle(mode, newnym) {
         }
 
         for(var i = 0; i < remove.length; i++) {
+            openUrls.push(remove[i].contentWindow.location.href);
             remove[i].contentWindow.close();
         }
     }
@@ -2032,6 +2075,11 @@ function torbutton_close_on_toggle(mode, newnym) {
     }
 
     torbutton_log(3, "Closed all tabs");
+
+    if (torbutton_old_identity_state.should_save_tabs) {
+      torbutton_old_identity_state.saved_tabs = openUrls;
+      torbutton_log(3, "open tabs: "+JSON.stringify(openUrls));
+    }
 }
 
 // Bug 1506 P2: This code is only important for disabling
