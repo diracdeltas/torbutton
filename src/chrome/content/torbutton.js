@@ -1386,9 +1386,15 @@ function torbutton_send_ctrl_cmd(command) {
 // Bug 1506 P4: Needed for New Identity.
 function torbutton_new_identity() {
   torbutton_old_identity_state.clear();
-  if (window.confirm("Would you like to save the currently open tabs?")) {
-    torbutton_old_identity_state.should_save_tabs = true;
-  }
+  var prompts = Cc["@mozilla.org/embedcomp/prompt-service;1"]
+                  .getService(Components.interfaces.nsIPromptService);
+  var check = { value: false };
+  var shouldSave = prompts.alertCheck(window,
+                    "Save tabs?",
+                    "Would you like to save your open tabs? (May leak identity.)",
+                    "Yes",
+                    check);
+  torbutton_old_identity_state.should_save_tabs = check.value;
   try {
     torbutton_do_new_identity();
   } catch(e) {
