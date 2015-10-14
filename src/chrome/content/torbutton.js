@@ -2907,15 +2907,6 @@ function torbutton_do_main_window_startup()
 {
     torbutton_log(3, "Torbutton main window startup");
     m_tb_is_main_window = true;
-
-    // http://www.xulplanet.com/references/xpcomref/ifaces/nsIWebProgress.html
-    var progress =
-        Components.classes["@mozilla.org/docloaderservice;1"].
-        getService(Components.interfaces.nsIWebProgress);
-
-    progress.addProgressListener(torbutton_weblistener,
-            Components.interfaces.nsIWebProgress.NOTIFY_LOCATION);
-
     torbutton_unique_pref_observer.register();
 }
 
@@ -3181,11 +3172,6 @@ function torbutton_close_window(event) {
             }
         }
 
-        // remove old listeners
-        var progress = Components.classes["@mozilla.org/docloaderservice;1"].
-            getService(Components.interfaces.nsIWebProgress);
-
-        progress.removeProgressListener(torbutton_weblistener);
         torbutton_unique_pref_observer.unregister();
 
         if(m_tb_is_main_window) { // main window not reset above
@@ -3208,165 +3194,6 @@ function torbutton_open_network_settings() {
 
 window.addEventListener('load',torbutton_new_window,false);
 window.addEventListener('unload', torbutton_close_window, false);
-
-// FIXME: Tons of exceptions get thrown from this function on account
-// of its being called so early. Need to find a quick way to check if
-// aProgress and aRequest are actually fully initialized 
-// (without throwing exceptions)
-// Bug 1506 P0: This is to block full page plugins. Not needed anymore
-// due to better (but non-toggle-friendly) plugin APIs)
-function torbutton_check_progress(aProgress, aRequest, aFlags, new_loc) {
-    if (!m_tb_wasinited) {
-        torbutton_init();
-    }
-
-    var DOMWindow = null;
-
-    // Bug #866: Zotero conflict with about:blank windows
-    // handle docshell JS switching and other early duties
-    var WP_STATE_START = Ci.nsIWebProgressListener.STATE_START;
-    var WP_STATE_DOC = Ci.nsIWebProgressListener.STATE_IS_DOCUMENT;
-    var WP_STATE_START_DOC = WP_STATE_START | WP_STATE_DOC;
-
-    if ((aFlags & WP_STATE_START_DOC) == WP_STATE_START_DOC 
-            && aRequest instanceof Ci.nsIChannel
-            && !(aRequest.loadFlags & aRequest.LOAD_INITIAL_DOCUMENT_URI) 
-            && aRequest.URI.spec == "about:blank") { 
-        torbutton_log(3, "Passing on about:blank");
-        return 0;
-    }
-
-    if(aProgress) {
-        try {
-            DOMWindow = aProgress.DOMWindow;
-        } catch(e) {
-            torbutton_log(4, "Exception on DOMWindow: "+e);
-            DOMWindow = null;
-        }
-    } 
-
-    if(!DOMWindow) {
-        try {
-            if(aRequest.notificationCallbacks) {
-                DOMWindow = aRequest.notificationCallbacks.QueryInterface(
-                        Components.interfaces.nsIInterfaceRequestor).getInterface(
-                            Components.interfaces.nsIDOMWindow);
-            }
-        } catch(e) { }
-    }
-    
-    // TODO: separate this from the above?
-    if(DOMWindow) {
-        var doc = DOMWindow.document;
-        try {
-            if(doc) {
-                if(doc.domain) {
-                  var referrer = null;
-                  var win = DOMWindow.window;
-
-                  try {
-                      var hreq = aRequest.QueryInterface(Ci.nsIHttpChannel);
-                      referrer = hreq.referrer;
-                  } catch(e) {}
-
-                  try {
-                      // XXX: The patch from https://bugzilla.mozilla.org/show_bug.cgi?id=444222
-                      // might be better here..
-                      //
-                      // Ticket #3414: Apply referer policy to window.name.
-                      //
-                      // This keeps window.name clean between fresh urls.
-                      // It should also apply to iframes because hookdoc gets called for all
-                      // frames and subdocuments.
-                      //
-                      // The about:blank check handles the 'name' attribute of framesets, which
-                      // get set before the referer is set on the channel.
-                      if ((!referrer || referrer.spec == "") && win.location != "about:blank") {
-                          if (win.top == win.window) {
-                              // Only reset if we're the top-level window
-                              //torbutton_log(4, "Resetting window.name: "+win.name+" for "+win.location);
-                              win.name = "";
-                              win.window.name = "";
-                          }
-                      }
-                  } catch(e) {
-                      torbutton_log(4, "Failed to reset window.name: "+e)
-                  }
-                }
-            }
-        } catch(e) {
-            try {
-                if(doc && doc.location && 
-                  (doc.location.href.indexOf("about:") != 0 &&
-                   doc.location.href.indexOf("chrome:") != 0)) {
-                    torbutton_safelog(4, "Exception "+e
-                                   +" on tag application at: ",
-                                    doc.location);
-                } else {
-                    torbutton_eclog(3, "Got an about url: "+e);
-                }
-            } catch(e1) {
-                torbutton_eclog(3, "Got odd url "+e);
-            }
-        }        
-    } else {
-        torbutton_eclog(3, "No aProgress for location!");
-    }
-    return 0;
-}
-
-// Warning: These can also fire when the 'debuglogger' extension
-// updates its window. Typically for this, doc.domain is null. Do not
-// log in this case (until we find a better way to filter those
-// events out). Use torbutton_eclog for common-path stuff.]
-// 
-// Bug 1506 P0: This listener is for blocking plugins and installing JS hooks.
-// It can be eliminated.
-var torbutton_weblistener =
-{
-  QueryInterface: function(aIID)
-  {
-   if (aIID.equals(Components.interfaces.nsIWebProgressListener) ||
-       aIID.equals(Components.interfaces.nsISupportsWeakReference) ||
-       aIID.equals(Components.interfaces.nsISupports))
-     return this;
-   throw Components.results.NS_NOINTERFACE;
-  },
-
-  onLocationChange: function(aProgress, aRequest, aURI)
-  {
-      torbutton_eclog(2, 'onLocationChange: '+aURI.asciiSpec);
-      if(aURI.scheme == "about" || aURI.scheme == "chrome") {
-          torbutton_eclog(3, "Skipping location change for "+aURI.asciiSpec);
-      } else {
-          return torbutton_check_progress(aProgress, aRequest, 0, true);
-      }
-  },
-
-  // XXX: The following can probably go
-  onStateChange: function(aProgress, aRequest, aFlag, aStatus)
-  { 
-      torbutton_eclog(2, 'State change()');
-      return torbutton_check_progress(aProgress, aRequest, aFlag, false);
-  },
-
-  onProgressChange: function(aProgress, aRequest, curSelfProgress, maxSelfProgress, curTotalProgress, maxTotalProgress) 
-  { 
-      torbutton_eclog(2, 'called progressChange'); 
-      return torbutton_check_progress(aProgress, aRequest, 0, false);
-  },
-  
-  onStatusChange: function(aProgress, aRequest, stat, message) 
-  { 
-      torbutton_eclog(2, 'called progressChange'); 
-      return torbutton_check_progress(aProgress, aRequest, 0, false);
-  },
-  
-  onSecurityChange: function() {return 0;},
-  
-  onLinkIconAvailable: function() 
-  { /*torbutton_eclog(1, 'called linkIcon'); */ return 0; }
-}
 
 var m_tb_resize_handler = null;
 var m_tb_resize_date = null;
