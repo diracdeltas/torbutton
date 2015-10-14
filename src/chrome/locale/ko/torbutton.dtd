@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "구글 검색 쿼리시 플랫폼과 언어 정보를 벗겨냄">
 <!ENTITY torbutton.prefs.transparentTor "투명 Toritication (사용자 transproxy나 Tor 라우터 필요)">
 <!ENTITY torbutton.prefs.priv_caption "개인 정보 설정">
 <!ENTITY torbutton.prefs.block_disk "브라우징 히스토리나 웹사이트 데이터를 기록하지 마십시오 (Private Browsing 모드 활성화)">

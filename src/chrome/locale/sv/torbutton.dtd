@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Ta bort plattform och språk från Google Sök Box förfrågningar">
 <!ENTITY torbutton.prefs.transparentTor "Transparent torifikation (Kräver skräddarsydd transproxy eller Tor router)">
 <!ENTITY torbutton.prefs.priv_caption "Sekretessinställningar">
 <!ENTITY torbutton.prefs.block_disk "Spara ingen historik eller webbplatsdata (aktiverar privat surfning)">

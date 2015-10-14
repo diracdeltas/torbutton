@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Retirar plataforma e língua dos pedidos da caixa de pesquisa do Google">
 <!ENTITY torbutton.prefs.transparentTor "Torificação transparente (Necessita transpoxy customizado ou router Tor)">
 <!ENTITY torbutton.prefs.priv_caption "Configurações de Privacidade">
 <!ENTITY torbutton.prefs.block_disk "Don't record browsing history or website data (enables Private Browsing Mode)">

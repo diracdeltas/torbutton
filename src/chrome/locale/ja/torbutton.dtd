@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Google検索ボックスのクエリからプラットフォームと言語を外す">
 <!ENTITY torbutton.prefs.transparentTor "透過型Tor化 (カスタム透過型プロキシかTorのルーターが必要)">
 <!ENTITY torbutton.prefs.priv_caption "プライバシー設定">
 <!ENTITY torbutton.prefs.block_disk "ブラウジング履歴やウェブサイトのデータを記録しない (プライベートブラウジングモードを有効化)">

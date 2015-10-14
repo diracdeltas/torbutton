@@ -2901,53 +2901,6 @@ function torbutton_fixup_old_prefs()
 
 // ---------------------- Event handlers -----------------
 
-// Bug 1506 P1/P3: This removes any platform-specific junk
-// from the omnibox. In Tor Browser, it should not be needed.
-function torbutton_wrap_search_service()
-{
-  var ss = Cc["@mozilla.org/browser/search-service;1"]
-                 .getService(Ci.nsIBrowserSearchService);
-  var junk = {"value":0};
-  var engines = ss.getEngines(junk);
-
-  for(var i = 0; i < engines.length; ++i) {
-    var origEngineObj = engines[i].wrappedJSObject;
-    torbutton_log(2, "Got engine: "+origEngineObj._name);
-    // hrmm.. could use
-    // searchForm.match(/^www\.google\.(co\.\S\S|com|\S\S|com\.\S\S)$/);
-    if(origEngineObj._name.indexOf("Google") != -1) {
-      torbutton_log(3, "Found google search plugin to wrap.");
-      if (typeof(origEngineObj.oldGetSubmission) == "undefined") {
-        torbutton_log(3, "Original window for google search");
-        origEngineObj.oldGetSubmission=origEngineObj.getSubmission;
-      } else {
-        torbutton_log(3, "Secondary window for google search");
-      }
-      origEngineObj.getSubmission = function lmbd(aData, respType) {
-        var sub = this.oldGetSubmission(aData, respType);
-        if(!m_tb_prefs.getBoolPref("extensions.torbutton.tor_enabled")
-            || !m_tb_prefs.getBoolPref("extensions.torbutton.fix_google_srch")) {
-          return sub;
-        }
-
-        var querymatch = sub.uri.path.match("[\?\&](q=[^&]+)(?:[\&]|$)")[1];
-        var querypath = sub.uri.path.split("?")[0];
-        torbutton_log(3, "Got submission call to Google search.");
-
-        var newURI = Cc["@mozilla.org/network/standard-url;1"]
-                          .createInstance(Ci.nsIStandardURL);
-        newURI.init(Ci.nsIStandardURL.URLTYPE_STANDARD, 80,
-                sub.uri.scheme+"://"+sub.uri.host+querypath+"?"+querymatch,
-                sub.uri.originCharset, null);
-        newURI = newURI.QueryInterface(Components.interfaces.nsIURI);
-        sub._uri = newURI;
-        torbutton_log(3, "Returning new search url.");
-        return sub;
-      };
-    }
-  }
-}
-
 // Bug 1506 P1-P3: Most of these observers aren't very important.
 // See their comments for details
 function torbutton_do_main_window_startup()
@@ -2962,9 +2915,6 @@ function torbutton_do_main_window_startup()
 
     progress.addProgressListener(torbutton_weblistener,
             Components.interfaces.nsIWebProgress.NOTIFY_LOCATION);
-
-    // Wrap Google search service.
-    //torbutton_wrap_search_service();
 
     torbutton_unique_pref_observer.register();
 }

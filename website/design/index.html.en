@@ -1065,16 +1065,6 @@ sent. The default value is 1. The smart referer spoofing is implemented by the
 </p><p>
 This setting also does not directly satisfy any Torbutton requirement, but
 some may desire to mask their referer for general privacy concerns.
-</p></div><div class="sect3" title="Strip platform and language off of Google Search Box queries"><div class="titlepage"><div><div><h4 class="title"><a id="id2706480"></a>Strip platform and language off of Google Search Box queries</h4></div></div></div><p>Option: <span class="command"><strong>extensions.torbutton.fix_google_srch</strong></span>
-</p><p> 
-
-This option causes Torbutton to use the <a class="ulink" href="https://wiki.mozilla.org/Search_Service:API" target="_top">@mozilla.org/browser/search-service;1</a>
-component to wrap the Google search plugin. On many platforms, notably Debian
-and Ubuntu, the Google search plugin is set to reveal a lot of language and
-platform information. This setting strips off that info while Tor is enabled.
-
-</p><p>
-This setting helps Torbutton to fulfill its <a class="link" href="#setpreservation">Anonymity Set Preservation</a> requirement.
 </p></div><div class="sect3" title="Automatically use an alternate search engine when presented with a Google Captcha"><div class="titlepage"><div><div><h4 class="title"><a id="id2706521"></a>Automatically use an alternate search engine when presented with a
 Google Captcha</h4></div></div></div><p>Options:
 </p><table border="0" summary="Simple list" class="simplelist"><tr><td><span class="command"><strong>extensions.torbutton.asked_google_captcha</strong></span></td></tr><tr><td><span class="command"><strong>extensions.torbutton.dodge_google_captcha</strong></span></td></tr><tr><td><span class="command"><strong>extensions.torbutton.google_redir_url</strong></span></td></tr></table><p>

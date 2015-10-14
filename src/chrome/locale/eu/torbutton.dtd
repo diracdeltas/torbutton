@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Kendu plataforma eta hizkuntza Google Searh Box eskaeretatik">
 <!ENTITY torbutton.prefs.transparentTor "Torifikazio Gardena (transproxy pertsonalizatua edo Tor routerra behar du)">
 <!ENTITY torbutton.prefs.priv_caption "Pribatutasun ezarpenak">
 <!ENTITY torbutton.prefs.block_disk "Ez grabatu nabigatze historia edo webgune datuak (Nabigatze pribatu modua gaitzen du)">

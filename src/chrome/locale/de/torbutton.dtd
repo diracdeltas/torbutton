@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Betriebssystem und Sprache bei Google Suchabfragen nicht übermitteln">
 <!ENTITY torbutton.prefs.transparentTor "Transparente-Torification (Erfordert eigenen Transproxy oder Tor-Router)">
 <!ENTITY torbutton.prefs.priv_caption "Privatsphären-Einstellungen">
 <!ENTITY torbutton.prefs.block_disk "Browser-Verlauf und Internetdaten nicht speichern (aktiviert den privaten Browser-Modus)">

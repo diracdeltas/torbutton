@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "أزل المنصة واللغة من استفسارات محرك بحث غوغل">
 <!ENTITY torbutton.prefs.transparentTor "شفافية توريفكيشن (تحتاج موجه تور أو ترانسبوكسي مخصص)">
 <!ENTITY torbutton.prefs.priv_caption "إعدادات الخصوصية">
 <!ENTITY torbutton.prefs.block_disk "لا تسجل سجل التصفح أو بيانات المواقع الألكترونية (تفعيل التصفح الخصوصي)">

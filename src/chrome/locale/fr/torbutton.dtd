@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Supprimer les informations relatives à la plateforme et à la langue des requêtes Google">
 <!ENTITY torbutton.prefs.transparentTor "Torification transparente (requiert un transproxy personnalisé ou un routeur Tor)">
 <!ENTITY torbutton.prefs.priv_caption "Paramètres de vie privé">
 <!ENTITY torbutton.prefs.block_disk "Ne pas sauvegarder l'historique de navigation et les données des sites webs (active le Mode de Navigation Privée)">

@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Удалять сведения о платформе и языке из запросов строки поиска Google">
 <!ENTITY torbutton.prefs.transparentTor "Прозрачная &quot;торификация&quot; (требует пользовательских transproxy или Tor-маршрутизатора)">
 <!ENTITY torbutton.prefs.priv_caption "Настройки конфиденциальности">
 <!ENTITY torbutton.prefs.block_disk "Не сохранять историю журнала посещений и данные с посещаемых сайтов (активирует функцию конфиденциального просмотра)">

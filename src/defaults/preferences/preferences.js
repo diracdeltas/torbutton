@@ -206,7 +206,6 @@ pref("extensions.torbutton.redir_url.2", "http://www.bing.com/search?q=");
 pref("extensions.torbutton.redir_url.3", "http://search.yahoo.com/search?p=");
 pref("extensions.torbutton.redir_url.4", "https://www.startpage.com/rto/search?query=");
 pref("extensions.torbutton.redir_url.5", "https://duckduckgo.com/?q=");
-pref("extensions.torbutton.fix_google_srch", true);
 
 // User agent prefs:
 pref("extensions.torbutton.appname_override","Netscape");

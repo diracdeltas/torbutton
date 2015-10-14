@@ -142,7 +142,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Poista yksilöintitiedot (laitteisto ja kieliasetukset) Google hakuja suoritettaessa ">
 <!ENTITY torbutton.prefs.transparentTor "Käytä Toria läpinäkyvästi (edellyttää mukautetun transproxyn tai Tor-reitittimen käyttöä)">
 <!ENTITY torbutton.prefs.block_disk "Älä säilytä selaushistoriaa tai verkkosivuston tietoa (käynnistää yksityisen selauksen)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Estä kolmannen osapuolen evästeet ja muut seurantatiedot">

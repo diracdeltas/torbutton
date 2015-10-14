@@ -142,7 +142,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Noņemt platformu un valodu no gūgļa meklēšanas lodziņu jeb Google Search Box vaicājumiem">
 <!ENTITY torbutton.prefs.transparentTor "Pārredzama torifikācija (nepieciešams pielāgots pārstarpnieks jeb transproxy vai Tor'a maršrutētājs)">
 <!ENTITY torbutton.prefs.block_disk "Nereģistrēt pārlūkošanas vēsturi vai tīmekļa vietņu datus (iespējo Privātas pārlūkošanas režīmu)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Ierobežot trešo personu sīkdatnes un citus izsekošanas datus">

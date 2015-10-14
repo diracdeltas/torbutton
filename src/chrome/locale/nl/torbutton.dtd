@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Systeem- en taalgegevens verwijderen bij gebruik van de Google zoekbalk">
 <!ENTITY torbutton.prefs.transparentTor "Transparante Torificatie (Heeft aangepaste transparente proxy of Tor router nodig)">
 <!ENTITY torbutton.prefs.priv_caption "Privacyinstellingen">
 <!ENTITY torbutton.prefs.block_disk "Bewaar geen surfgeschiedenis of websitegegevens. (Schakelt Privénavigatie in.)">

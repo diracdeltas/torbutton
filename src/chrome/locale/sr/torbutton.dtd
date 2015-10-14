@@ -142,7 +142,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Скини платформу и језик са Google претраживача">
 <!ENTITY torbutton.prefs.transparentTor "Транспарента Торификација (захтева посебан Tor прокси или Tor рутер)">
 <!ENTITY torbutton.prefs.block_disk "Ne pamti moji istoriju pretrazivanja ili podatke sa web sajtova(Omogucava Private Browsing Mode)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Ogranici cookies i druge podatke o pracenju">

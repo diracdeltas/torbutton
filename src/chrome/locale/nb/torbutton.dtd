@@ -142,7 +142,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Fjern platform og språk fra Google Search Box søk.">
 <!ENTITY torbutton.prefs.transparentTor "Transparent Torification (krever egendefinert transproxy eller Tor-router)">
 <!ENTITY torbutton.prefs.block_disk "Ikke lagre nettleserhistorikk eller nettsidedata (aktiverer privat nettleser økt)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Begrens tredjeparts informasjonskapsler og andre sporingsdata.">

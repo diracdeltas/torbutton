@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "Google Arama Kutusu sorgularında platform ve dil bilgileri ayıklansın">
 <!ENTITY torbutton.prefs.transparentTor "Saydam Tor İletişimi (özel transproxy yada Tor yönelticisi gerekir)">
 <!ENTITY torbutton.prefs.priv_caption "Gizlilik Ayarları">
 <!ENTITY torbutton.prefs.block_disk "Tarama geçmişini ve web sitesi bilgileri kaydedilmesin (Gizli Tarama Kipi kullanılır)">

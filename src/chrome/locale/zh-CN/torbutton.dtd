@@ -144,7 +144,6 @@
 <!ENTITY torbutton.prefs.engine3 "Yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.fix_google_srch "在 Google 搜索栏搜索时去掉平台和语言信息。">
 <!ENTITY torbutton.prefs.transparentTor "Tor 强化透明代理（需要自设 TransProxy 或 Tor 路由）">
 <!ENTITY torbutton.prefs.priv_caption "隐私设置">
 <!ENTITY torbutton.prefs.block_disk "禁止记录浏览历史或网站数据（启用隐私浏览模式）">

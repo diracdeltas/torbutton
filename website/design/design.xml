@@ -2058,27 +2058,6 @@ some may desire to mask their referer for general privacy concerns.
 </sect3>
 
 <sect3>
-  <title>Strip platform and language off of Google Search Box queries</title>
-
-<para>Option: <command>extensions.torbutton.fix_google_srch</command>
-</para>
-
-<para> 
-
-This option causes Torbutton to use the <ulink
-url="https://wiki.mozilla.org/Search_Service:API">@mozilla.org/browser/search-service;1</ulink>
-component to wrap the Google search plugin. On many platforms, notably Debian
-and Ubuntu, the Google search plugin is set to reveal a lot of language and
-platform information. This setting strips off that info while Tor is enabled.
-
-</para>
-<para>
-This setting helps Torbutton to fulfill its <link
-linkend="setpreservation">Anonymity Set Preservation</link> requirement.
-</para>
-</sect3>
-
-<sect3>
   <title>Automatically use an alternate search engine when presented with a
 Google Captcha</title>
 
