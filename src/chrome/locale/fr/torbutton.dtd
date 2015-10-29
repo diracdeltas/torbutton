@@ -1,6 +1,6 @@
-<!ENTITY torbutton.prefs.title "Préférences Torbutton">
+<!ENTITY torbutton.prefs.title "Préférences de Torbutton">
 <!ENTITY torbutton.prefs.tor_settings "Paramètres du proxy">
-<!ENTITY torbutton.prefs.recommended_settings "Utiliser les paramètres de proxy recommandés pour ma version de Firefox">
+<!ENTITY torbutton.prefs.recommended_settings "Utiliser les paramètres du proxy recommandés pour ma version de Firefox">
 <!ENTITY torbutton.prefs.use_privoxy "Utiliser Privoxy">
 <!ENTITY torbutton.prefs.use_polipo "Utiliser Polipo">
 <!ENTITY torbutton.prefs.custom_settings "Utiliser des paramètres de proxy personnalisés">
@@ -34,7 +34,7 @@
 <!ENTITY torbutton.context_menu.about.key "A">
 <!ENTITY torbutton.context_menu.networksettings "Paramètres du réseau Tor">
 <!ENTITY torbutton.context_menu.networksettings.key "S">
-<!ENTITY torbutton.context_menu.downloadUpdate "Vérifiez les mises à jour du navigateur Tor">
+<!ENTITY torbutton.context_menu.downloadUpdate "Vérifier les mises à jour du navigateur Tor">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Protections contre les cookies">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
@@ -54,7 +54,7 @@
 <!ENTITY torbutton.prefs.clear_history "Vider l'historique à l'activation/désactivation de Tor (facultatif)">
 <!ENTITY torbutton.prefs.clear_cache "Bloquer la mémoire tampon du disque Tor et vider tous les caches à l'activation/désactivation de Tor">
 <!ENTITY torbutton.prefs.block_cache "Bloquer la mémoire tampon du disque et l'accès à la mémoire tampon pendant l'utilisation de Tor">
-<!ENTITY torbutton.prefs.cookie_jars "Conserver les cookies non-Tor dans une cookie-jar sécurisée">
+<!ENTITY torbutton.prefs.cookie_jars "Conserver les cookies non-Tor dans une boite à cookies sécurisée">
 <!ENTITY torbutton.prefs.cookie_protection "Choisir parmi la boîte de dialogue des Protections de cookies">
 <!ENTITY torbutton.prefs.mmm_cookies "Je gérerai mes cookies manuellement (dangereux)">
 <!ENTITY torbutton.prefs.clear_cookies "Supprimer les cookies à l'activation/désactivation de Tor">
@@ -62,14 +62,14 @@
 <!ENTITY torbutton.prefs.kill_bad_js "Intercepter les éléments javascript dangereux (indispensable)">
 <!ENTITY torbutton.prefs.isolate_content "Isoler les contenus dynamiques lorsque Tor fonctionne (indispensable)">
 <!ENTITY torbutton.prefs.no_updates "Désactiver les mises à jours durant l'utilisation de Tor">
-<!ENTITY torbutton.prefs.set_uagent "Paramétrer l'agent d'utilisateur pour l'utilisation de Tor (indispensable)">
+<!ENTITY torbutton.prefs.set_uagent "Altérer la version de navigateur communiquée pendant l'utilisation de Tor (indispensable)">
 <!ENTITY torbutton.prefs.dynamic "Contenu dynamique">
 <!ENTITY torbutton.prefs.cookies "Cookies">
 <!ENTITY torbutton.prefs.cache "Cache">
 <!ENTITY torbutton.prefs.history "Historique">
 <!ENTITY torbutton.prefs.no_search "Désactiver les suggestions de recherche pendant l'utilisation de Tor (recommandé)">
 <!ENTITY torbutton.prefs.shutdown "Arrêt">
-<!ENTITY torbutton.prefs.tor_shutdown "Supprimer les cookies Tor lors de l'arrêt du navigateur lorsque Tor est utilisé">
+<!ENTITY torbutton.prefs.tor_shutdown "Supprimer les cookies Tor à l'arrêt du navigateur lorsque Tor est utilisé">
 <!ENTITY torbutton.prefs.all_shutdown "Supprimer les cookies à chaque fermeture du navigateur">
 <!ENTITY torbutton.prefs.no_shutdown "Ne pas supprimer mes cookies à la fermeture">
 <!ENTITY torbutton.prefs.disable_sessionstore "Désactiver la fonction de sauvegarde de session (recommandé)">
@@ -88,9 +88,9 @@
 <!ENTITY torbutton.prefs.restore_tor "Lors d'une restauration de session, mettre Tor en état:">
 <!ENTITY torbutton.prefs.startup_tor "Au démarrage, mettre Tor dans l'état :">
 <!ENTITY torbutton.prefs.reload_crashed_jar "Recharger la cookie jar et supprimer cookies lors d'un plantage de Firefox (recommandé)">
-<!ENTITY torbutton.prefs.dual_cookie_jars "Stocker les cookies Tor et non-Tor dans des cookie-jars sécurisés (dangereux)">
+<!ENTITY torbutton.prefs.dual_cookie_jars "Stocker les cookies Tor et non-Tor dans des boites à cookies sécurisées (dangereux)">
 <!ENTITY torbutton.prefs.clear_http_auth "Supprimer les sessions HTTP authentifiées (recommandé)">
-<!ENTITY torbutton.prefs.block_js_history "Isoler l'accès à l'historique de navigation à l'état Tor (indispensable)">
+<!ENTITY torbutton.prefs.block_js_history "Isoler l'accès à l'historique de navigation lors de la navigation Tor (indispensable)">
 <!ENTITY torbutton.prefs.resize_on_toggle "Redimensionner la fenêtre sur un multiple de 50px lors de l'utilisation de Tor (recommandé)">
 <!ENTITY torbutton.prefs.close_tor "Fermer toutes les fenêtres et onglets à l'activation/désactivation (facultatif)">
 <!ENTITY torbutton.prefs.close_nontor "Fermer toutes les fenêtres et onglets Non-Tor à l'activation/désactivation (optionnel)">
@@ -144,8 +144,8 @@
 <!ENTITY torbutton.prefs.engine3 "yahoo.com">
 <!ENTITY torbutton.prefs.engine4 "startpage.com">
 <!ENTITY torbutton.prefs.engine5 "duckduckgo.com">
-<!ENTITY torbutton.prefs.transparentTor "Torification transparente (requiert un transproxy personnalisé ou un routeur Tor)">
-<!ENTITY torbutton.prefs.priv_caption "Paramètres de vie privé">
+<!ENTITY torbutton.prefs.transparentTor "Torification transparente (requiert un transproxy spécialisé ou un routeur Tor)">
+<!ENTITY torbutton.prefs.priv_caption "Paramètres de vie privée">
 <!ENTITY torbutton.prefs.block_disk "Ne pas sauvegarder l'historique de navigation et les données des sites webs (active le Mode de Navigation Privée)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Limiter les cookies tiers ainsi que les autres données de traçage">
 <!ENTITY torbutton.prefs.block_plugins "Désactiver les greffons du navigateur (tels que Flash)">
@@ -153,25 +153,25 @@
 <!ENTITY torbutton.prefs.sec_caption "Niveau de sécurité">
 <!ENTITY torbutton.prefs.sec_low "Faible (par défaut)">
 <!ENTITY torbutton.prefs.sec_low_usable_desc "Cela offre l'expérience la plus agréable.">
-<!ENTITY torbutton.prefs.sec_low_desc "A ce niveau de sécurité, toutes les fonctions de navigation sont activés.">
+<!ENTITY torbutton.prefs.sec_low_desc "A ce niveau de sécurité, toutes les fonctions de navigation sont activées.">
 <!ENTITY torbutton.prefs.sec_font_rend_svg_tooltip "Le mécanisme SVG OpenType de rendu des polices est désactivé.">
 <!ENTITY torbutton.prefs.sec_med_low "Moyen-Bas">
 <!ENTITY torbutton.prefs.sec_gen_desc "À ce niveau de sécurité, les changements suivants s'appliquent (passez la souris au dessus pour afficher des détails) :">
-<!ENTITY torbutton.prefs.sec_html5_desc "Les vidéos et médias audio HTML5 deviennent jouable d'un clic via NoScript.">
-<!ENTITY torbutton.prefs.sec_html5_tooltip "Sur quelques sites, vous pourriez devoir utiliser le bouton de barre d'outils de NoScript pour permettre ces objets médiatiques.">
-<!ENTITY torbutton.prefs.sec_some_jit_desc "Quelques optimisations de performance liés à Javascript sont désactivées.">
-<!ENTITY torbutton.prefs.sec_jit_desc_tooltip "JIT ION,  Inférence de types, ASM.JS.">
+<!ENTITY torbutton.prefs.sec_html5_desc "Les média audio-vidéos HTML5 doivent être cliqués pour être lus (via NoScript).">
+<!ENTITY torbutton.prefs.sec_html5_tooltip "Sur quelques sites, vous pourriez avoir à utiliser le bouton de barre d'outils de NoScript pour autoriser ces objets multimédias.">
+<!ENTITY torbutton.prefs.sec_some_jit_desc "Certaines optimisations liés à Javascript sont désactivées.">
+<!ENTITY torbutton.prefs.sec_jit_desc_tooltip "JIT ION, inférence de types, ASM.JS.">
 <!ENTITY torbutton.prefs.sec_baseline_jit_desc_tooltip "JIT Baseline.">
-<!ENTITY torbutton.prefs.sec_jit_slower_desc "Les scripts sur quelques sites peuvent fonctionner plus lentement.">
+<!ENTITY torbutton.prefs.sec_jit_slower_desc "Les scripts sur certains sites peuvent être ralentis.">
 <!ENTITY torbutton.prefs.sec_jar_desc "Les fichiers distants JAR sont bloqués.">
 <!ENTITY torbutton.prefs.sec_jar_tooltip "Les fichiers JAR sont extrêmement rares sur le Web, mais peuvent être une source d'attaques XSS et autres.">
 <!ENTITY torbutton.prefs.sec_mathml_desc "Quelques mécanismes d'affichage d'équations mathématiques sont désactivés.">
 <!ENTITY torbutton.prefs.sec_mathml_desc_tooltip "MathML est désactivé.">
-<!ENTITY torbutton.prefs.sec_med_high "Moyen-Haut">
+<!ENTITY torbutton.prefs.sec_med_high "Moyennement haut">
 <!ENTITY torbutton.prefs.sec_all_jit_desc "Toutes les optimisations de performance de Javascript sont désactivées.">
 <!ENTITY torbutton.prefs.sec_font_rend_desc "Certaines fonctionnalités de rendu de police sont désactivées.">
 <!ENTITY torbutton.prefs.sec_font_rend_graphite_tooltip "Le mécanisme de rendu de police de caractères Graphite est désactivé.">
-<!ENTITY torbutton.prefs.sec_svg_desc "Quelques types d'images sont désactivés.">
+<!ENTITY torbutton.prefs.sec_svg_desc "Certains formats d'images sont désactivés.">
 <!ENTITY torbutton.prefs.sec_svg_desc_tooltip "Les images SVG sont désactivées.">
 <!ENTITY torbutton.prefs.sec_js_https_desc "JavaScript est désactivé par défaut sur tous les sites non-HTTPS.">
 <!ENTITY torbutton.prefs.sec_js_desc_tooltip "JavaScript peut être activé selon le site via le bouton de barre d'outils NoScript.">
