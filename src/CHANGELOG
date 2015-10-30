@@ -1,3 +1,10 @@
+1.9.4.1
+ * Bug 9263: Spoof Referer when leaving a .onion domain
+ * Bug 16620: Move window.name handling into a Firefox patch
+ * Bug 17164: Don't show text-select cursor on circuit display
+ * Bug 17351: Remove unused code
+ * Translation updates
+
 1.9.4
  * Bug 16937: Don't translate the hompepage/spellchecker dictionary string
  * Bug 16735: about:tor should accommodate different fonts/font sizes
