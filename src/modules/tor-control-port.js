@@ -517,11 +517,11 @@ info.stringToValue = function (string) {
       key = matchForKey ? matchForKey[1] : null;
   if (key === null) return null;
   // matchResult finds a single-line result for `250-` or a multi-line one for `250+`.
-  let matchResult = string.match(/250[ -].+?=(.*?)$/mi) ||
-                    string.match(/250\+.+?=([\s\S]*?)^\.$/mi),
+  let matchResult = string.match(/^250[ -].+?=(.*?)$/mi) ||
+                    string.match(/^250\+.+?=([\s\S]*?)^\.$/mi),
       // Retrieve the captured group (the text of the value in the key-value pair)
       valueString = matchResult ? matchResult[1] : null,
-      // Get the parser functino for the key found.
+      // Get the parser function for the key found.
       parse = info.getParser(key.toLowerCase());
   if (parse === undefined) {
     throw new Error("No parser found for '" + key + "'");
