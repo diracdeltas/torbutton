@@ -309,12 +309,21 @@ body .top div.hideIfTorIsUpToDate h1.hideIfTorOff {
   display: none;
 }
 
+#donation-banner > a {
+  display: block;
+}
+
 #donation-banner-inner {
   margin: 0px auto;
   position: relative;
   text-align: left;
   width: 700px;
   z-index: -1;
+  display: block;
+}
+
+#donation-banner-image {
+  display: block;
 }
 
 #donation-banner-text {
@@ -327,6 +336,7 @@ body .top div.hideIfTorIsUpToDate h1.hideIfTorOff {
 
 #donation-banner-quote {
   color: darkgreen;
+  font-family: serif;
   font-size: 18px;
   text-align: start;
   white-space: normal;
@@ -365,11 +375,11 @@ body .top div.hideIfTorIsUpToDate h1.hideIfTorOff {
   color: white;
   font-family: sans-serif;
   font-size: 20px;
-  left: 600px;
+  left: 490px;
   padding: 10px;
   position: absolute;
   text-align: center;
-  top: 153px;
+  top: 144px;
   vertical-align: middle;
   width: 110px;
 }
