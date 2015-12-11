@@ -1,3 +1,13 @@
+1.9.4.2
+ * Bug 16940: After update, load local change notes
+ * Bug 16990: Avoid matching '250 ' to the end of node name
+ * Bug 17108: Polish about:tor appearance
+ * Bug 17565: Tor fundraising campaign donation banner
+ * Bug 17568: Clean up tor-control-port.js
+ * Bug 17770: Fix alignments on donation banner
+ * Bug 17792: Include donation banner in some non en-US Tor Browsers
+ * Translation updates
+
 1.9.4.1
  * Bug 9623: Spoof Referer when leaving a .onion domain
  * Bug 16620: Move window.name handling into a Firefox patch
