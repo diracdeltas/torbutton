@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Να μην γίνει εκκαθάριση cookies κατά το κλείσιμο">
 <!ENTITY torbutton.prefs.disable_sessionstore "Απενεργοποίηση αποθήκευσης συνεδρίας (συνιστάται)">
 <!ENTITY torbutton.prefs.headers "Κεφαλίδες">
-<!ENTITY torbutton.prefs.spoof_english "Παραπλάνηση της γλώσσας US English του Περιηγητή">
 <!ENTITY torbutton.prefs.refererspoofing "Παραπλάνηση διεύθυνσης αναφοράς">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Παραπλάνηση ευφυούς αναφορέα κατά την χρήση του Tor (παραπλανεί ">

@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Không xóa cookie của tôi khi tắt trình duyệt">
 <!ENTITY torbutton.prefs.disable_sessionstore "Vô hiệu hóa Lưu Phiên Duyệt Web (khuyến cáo)">
 <!ENTITY torbutton.prefs.headers "Đầu đề">
-<!ENTITY torbutton.prefs.spoof_english "Bắt chước Trình duyệt Tiếng Anh-Mỹ">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Ryd ikke mine cookies ved nedlukning">
 <!ENTITY torbutton.prefs.disable_sessionstore "Deaktiver Sessions Lagring (anbefales)">
 <!ENTITY torbutton.prefs.headers "Hoveder">
-<!ENTITY torbutton.prefs.spoof_english "Spoof US Engelsk Browser">
 <!ENTITY torbutton.prefs.refererspoofing "Forfalskning af henviser">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart forfalskning af henviser under brug af Tor (forfalsk henvisninger som går på tværs af domæner)">

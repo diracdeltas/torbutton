@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Nu șterge cookie-urile mele la închidere">
 <!ENTITY torbutton.prefs.disable_sessionstore "Dezactivați salvarea sesiunilor (recomandat)">
 <!ENTITY torbutton.prefs.headers "Antete">
-<!ENTITY torbutton.prefs.spoof_english "Imitează browser-ul în Limba Engleză">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Izslēgšanās laikā neizdzēst manas sīkdatnes">
 <!ENTITY torbutton.prefs.disable_sessionstore "Atspējot sesijas saglabāšanu (ieteicami)">
 <!ENTITY torbutton.prefs.headers "Galvenes">
-<!ENTITY torbutton.prefs.spoof_english "Maldināt, uzdodoties par pārlūku, kurš strādā amerikāņu angļu valodā">
 <!ENTITY torbutton.prefs.refererspoofing "Maldināšana, norādot aplamas atsauces">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Vieda maldināšana, Tor'a lietošanas laikā norādot aplamas atsauces (maldina, norādot šķērsdomēnu atsauces)">

@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "シャットダウン時に私のcookieを削除しない">
 <!ENTITY torbutton.prefs.disable_sessionstore "セッション保存を無効化 (推奨)">
 <!ENTITY torbutton.prefs.headers "ヘッダ送信">
-<!ENTITY torbutton.prefs.spoof_english "アメリカ英語のブラウザを詐称する">
 <!ENTITY torbutton.prefs.refererspoofing "リファラを偽装する">
 <!ENTITY torbutton.prefs.spoofblank "Tor使用中は空白のリファラに偽装する (一部のサイトを壊すかもしれません)">
 <!ENTITY torbutton.prefs.smartspoof "Tor使用中はスマートなリファラ偽装 (クロスドメインのリファラを偽装する)">

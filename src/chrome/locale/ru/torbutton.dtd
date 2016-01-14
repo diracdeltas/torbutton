@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Не очищать куки-файлы при закрытии браузера">
 <!ENTITY torbutton.prefs.disable_sessionstore "Отключить сохранение сессий (желательно)">
 <!ENTITY torbutton.prefs.headers "Заголовки">
-<!ENTITY torbutton.prefs.spoof_english "Заголовки как в версии браузера US English">
 <!ENTITY torbutton.prefs.refererspoofing "Подстановка заголовка запроса (реферер)">
 <!ENTITY torbutton.prefs.spoofblank "Имитировать пустой реферер во время использования Tor (может привести к невозможности просмотра некоторых сайтов)">
 <!ENTITY torbutton.prefs.smartspoof "Ловкая подстановка реферера во время использования Tor (подмена перекрёстных доменных рефереров)">

@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Verwijder mijn cookies niet na het afsluiten">
 <!ENTITY torbutton.prefs.disable_sessionstore "Schakel sessie opslaan uit (aanbevolen)">
 <!ENTITY torbutton.prefs.headers "Headers">
-<!ENTITY torbutton.prefs.spoof_english "Imiteer een US Engelse browser">
 <!ENTITY torbutton.prefs.refererspoofing "Verwijzer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Slimme verwijzer spoofing tijdens Tor gebruik (spoofs cross-domain verwijzers)">

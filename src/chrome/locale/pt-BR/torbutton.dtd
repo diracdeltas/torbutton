@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Não limpar meus cookies ao encerrar">
 <!ENTITY torbutton.prefs.disable_sessionstore "Desabilitar o salvamento de sessão (recomendado)">
 <!ENTITY torbutton.prefs.headers "Cabeçalhos">
-<!ENTITY torbutton.prefs.spoof_english "Aparentar um Navegador em Inglês Americano">
 <!ENTITY torbutton.prefs.refererspoofing "Falsificar origem">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Falsificar de forma inteligente a origem durante o uso do Tor (falsifica a origem em domínios cruzados)">

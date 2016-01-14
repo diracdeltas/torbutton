@@ -89,7 +89,6 @@ pref("extensions.torbutton.saved.search_update", true);
 pref("extensions.torbutton.saved.geo_enabled", true);
 pref("extensions.torbutton.saved.zoom_specific", true);
 pref("extensions.torbutton.saved.accept_languages", "");
-pref("extensions.torbutton.saved.accept_charsets", "");
 pref("extensions.torbutton.saved.appname_override","");
 pref("extensions.torbutton.saved.appversion_override","");
 pref("extensions.torbutton.saved.platform_override","");
@@ -140,9 +139,6 @@ pref("extensions.torbutton.notor_sessionstore",true);
 pref("extensions.torbutton.nonontor_sessionstore",false);
 pref("extensions.torbutton.reload_crashed_jar",true); 
 pref("extensions.torbutton.spoof_english",true);
-pref("extensions.torbutton.spoof_charset",'iso-8859-1,*,utf-8');
-pref("extensions.torbutton.spoof_language",'en-us, en');
-pref("extensions.torbutton.spoof_locale",'en-US');
 pref("extensions.torbutton.refererspoof", 0); //0=smart referer, 1=blank, 2=no spoofing
 pref("extensions.torbutton.shutdown_method",1); // 0=none, 1=tor, 2=all
 pref("extensions.torbutton.block_tforms",true);

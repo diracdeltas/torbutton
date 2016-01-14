@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "关闭时不清除 cookies">
 <!ENTITY torbutton.prefs.disable_sessionstore "禁用 Firefox 的会话保存（推荐）">
 <!ENTITY torbutton.prefs.headers "Header">
-<!ENTITY torbutton.prefs.spoof_english "伪装浏览器语言为美国英语">
 <!ENTITY torbutton.prefs.refererspoofing "伪造 Referer">
 <!ENTITY torbutton.prefs.spoofblank "使用 Tor 时伪造空白 Referer（可能造成某些网站显示异常）">
 <!ENTITY torbutton.prefs.smartspoof "使用 Tor 时伪造智能 Referer（伪造跨域 Referer）">

@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "બંધ કરતી વખતે મારી કૂકીઓ સાફ ન કરો">
 <!ENTITY torbutton.prefs.disable_sessionstore "સત્રને સંગ્રહ કરવાનું નિષ્ક્રિય કરો (સૂચવેલ)">
 <!ENTITY torbutton.prefs.headers "શીર્ષકો">
-<!ENTITY torbutton.prefs.spoof_english "યુએસ અંગ્રેજી બ્રાઉઝરને છેતરો">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

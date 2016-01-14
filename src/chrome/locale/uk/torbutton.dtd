@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Не чистити куків при вимкненні переглядача">
 <!ENTITY torbutton.prefs.disable_sessionstore "Не дозволяти збереження сесій (рекомендовано)">
 <!ENTITY torbutton.prefs.headers "Заголовки">
-<!ENTITY torbutton.prefs.spoof_english "Прикидатися переглядачем US English">
 <!ENTITY torbutton.prefs.refererspoofing "Підстановка реферер">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Розумна підстановка реферера під час використання Tor (підміна перехресних доменних реферерів)">

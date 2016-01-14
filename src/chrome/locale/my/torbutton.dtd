@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "စက်ပိတ်ချိန်တွင် ကျွန်တော့် ကွက်ကီးကို မရှင်းပါနှင့်">
 <!ENTITY torbutton.prefs.disable_sessionstore "လုပ်ငန်း သိမ်းဆည်းမှုကို ပိတ်ရန် (အကြံပြုထားသည်)">
 <!ENTITY torbutton.prefs.headers "ခေါင်းစည်းများ">
-<!ENTITY torbutton.prefs.spoof_english "ယူအက်စ် အင်္ဂလိပ်သုံး ဘရောင်ဆာကို ပုံမှားရိုက်ရန်">
 <!ENTITY torbutton.prefs.refererspoofing "ရည်ညွှန်းသူ ပုံမှားရိုက်ခြင်း">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Tor သုံးစွဲနေချိန်အတွင်း ရည်ညွှန်းချက် ပုံမှားရိုက်ခြင်းကို ပြင်ရန်(ဒိုမိန်း ရည်ညွှန်းချက်များကို ပုံမှားရိုက်ချက်များ)">

@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Ikke slett informasjonskapslene mine under avslutning">
 <!ENTITY torbutton.prefs.disable_sessionstore "Deaktiver lagring av sesjoner (anbefalt)">
 <!ENTITY torbutton.prefs.headers "Topptekst">
-<!ENTITY torbutton.prefs.spoof_english "Parodier US Engelsk nettleser">
 <!ENTITY torbutton.prefs.refererspoofing "Henviserparodiering">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart henviserparodiering mens du bruker Tor (parodierer henvisninger på tvers av domener)">

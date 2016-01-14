@@ -59,7 +59,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "ပိတ္သိမ္းလွ်င္ cookies မ်ားကုိ မရွင္းလင္းပါႏွင့္">
 <!ENTITY torbutton.prefs.disable_sessionstore "သိမ္းဆည္းေနစဥ္ Session ကုိ ပိတ္ပင္ထားရန္ (အၾကံျပဳေထာက္ခံပါသည္)">
 <!ENTITY torbutton.prefs.headers "ေခါင္းစည္းမ်ား">
-<!ENTITY torbutton.prefs.spoof_english "US အဂၤလိပ္ browser ကုိ Spoof လုပ္ရန္">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

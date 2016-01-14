@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Ez garbitu nire cookieak itzaltzerakoan">
 <!ENTITY torbutton.prefs.disable_sessionstore "Ezagitu Saioa Gordetzea (gomendatua)">
 <!ENTITY torbutton.prefs.headers "Goiburuak">
-<!ENTITY torbutton.prefs.spoof_english "AEB Ingelera Nabigatzailea balitz ordeztu">
 <!ENTITY torbutton.prefs.refererspoofing "Refereraren nortasuna ordeztu">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Adimentsuki ordeztu referera Tor erabiltzen den bitartean (zeharkako domeinu refererak ordezten ditu)">

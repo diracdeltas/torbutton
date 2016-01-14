@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "종료시 쿠키를 삭제하지 않음">
 <!ENTITY torbutton.prefs.disable_sessionstore "세션을 저장하지 않음 (추천)">
 <!ENTITY torbutton.prefs.headers "헤더">
-<!ENTITY torbutton.prefs.spoof_english "미국식 영어 브라우저로 조작">
 <!ENTITY torbutton.prefs.refererspoofing "리퍼러 스푸핑">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Tor 사용시 스마트 리퍼러 조작 (도메인 리퍼러를 가로질러 조작)">

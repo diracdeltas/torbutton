@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Älä poista evästeitä lopettaessa">
 <!ENTITY torbutton.prefs.disable_sessionstore "Estä istunnon (Session) tallennus (suositeltavaa)">
 <!ENTITY torbutton.prefs.headers "Tunnistetiedot">
-<!ENTITY torbutton.prefs.spoof_english 'Näytä selaimen asetus ulospäin "US English"'>
 <!ENTITY torbutton.prefs.refererspoofing "Referer-tunnisteen väärentäminen">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Väärennä referer-tunniste älykkäästi, kun Tor on käytössä (lähettää väärennetyn tunnisteen)">

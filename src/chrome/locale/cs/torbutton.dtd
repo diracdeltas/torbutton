@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Do not clear my cookies at shutdown">
 <!ENTITY torbutton.prefs.disable_sessionstore "Disable Session Saving (recommended)">
 <!ENTITY torbutton.prefs.headers "Hlava">
-<!ENTITY torbutton.prefs.spoof_english "Spoof US English Browser">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

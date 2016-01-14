@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "پاک نکردن کوکی ها هنگام بستن">
 <!ENTITY torbutton.prefs.disable_sessionstore "غیرفعال کردن ذخیره‌سازی نشست (Session) ها (توصیه شده)">
 <!ENTITY torbutton.prefs.headers "سربرگ‌ها">
-<!ENTITY torbutton.prefs.spoof_english "جعل هویت یک مرورگر با زبان انگليسی آمریکایی">
 <!ENTITY torbutton.prefs.refererspoofing "جعل هويت ارجاع دهنده">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "جعل هويت هوشمندانه ارجاع دهنده هنگام استفاده از تُر (ارجاع دهنده های ميان دامنه‌ای را جعل هويت می کند)">

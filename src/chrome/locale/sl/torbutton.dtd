@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Ne zbriši piškotkov pri ugašanju">
 <!ENTITY torbutton.prefs.disable_sessionstore "Onemogoči shranjevanje sej (proporočeno)">
 <!ENTITY torbutton.prefs.headers "Headers (informacije na začetku paketa - naslavljanje)">
-<!ENTITY torbutton.prefs.spoof_english 'Navidezno "US English" brskalnik'>
 <!ENTITY torbutton.prefs.refererspoofing "osveži prevaro">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

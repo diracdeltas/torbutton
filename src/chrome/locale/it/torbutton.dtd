@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Non cancellare i cookies alla chiusura del browser">
 <!ENTITY torbutton.prefs.disable_sessionstore "Disabilita il salvataggio della sessione (consigliato)">
 <!ENTITY torbutton.prefs.headers "Headers">
-<!ENTITY torbutton.prefs.spoof_english "Simula di essere un browser US English">
 <!ENTITY torbutton.prefs.refererspoofing "Offusca i Referer">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Offusca in modo intelligente i Referef durante l'uso di Tor (offusca i riferimenti da un dominio ad un altro)">

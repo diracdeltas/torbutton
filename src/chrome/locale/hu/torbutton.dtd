@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Kilépéskor ne törölje a sütijeimet">
 <!ENTITY torbutton.prefs.disable_sessionstore "Munkafolyamat mentésének tiltása (ajánlott)">
 <!ENTITY torbutton.prefs.headers "Fejlécek">
-<!ENTITY torbutton.prefs.spoof_english "Amerikai angol böngészőnek álcázás">
 <!ENTITY torbutton.prefs.refererspoofing "Hivatkozó oldal hamisítás">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Intelligens hivatkozó oldal hazudás a Tor használat alatt (kereszt domain hivatkozást hazudik)">

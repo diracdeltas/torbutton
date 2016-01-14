@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "אל תנקה את הקוקיז שלי בזמן סגירת הדפדפן">
 <!ENTITY torbutton.prefs.disable_sessionstore "ביטול שמירת מושב (מומלץ)">
 <!ENTITY torbutton.prefs.headers "כותרות">
-<!ENTITY torbutton.prefs.spoof_english 'דפדפן אנגלית לזייף ארה"ב'>
 <!ENTITY torbutton.prefs.refererspoofing "זיוף Referer">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "לזייף referer חכם במהלך שימוש טור (משייכי מזייף צולב דומיין)">

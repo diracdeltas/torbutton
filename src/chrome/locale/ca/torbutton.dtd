@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "No esborris les galetes a l'hora de tancar">
 <!ENTITY torbutton.prefs.disable_sessionstore "Desactivar guardat de sessió (recommendat)">
 <!ENTITY torbutton.prefs.headers "Capçaleres">
-<!ENTITY torbutton.prefs.spoof_english "Simular navegador anglès">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

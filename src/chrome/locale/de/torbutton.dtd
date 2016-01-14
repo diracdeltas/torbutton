@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Cookies beim Beenden des Browsers nicht löschen">
 <!ENTITY torbutton.prefs.disable_sessionstore "Speichern des Browserzustandes zwischen Programmaufrufen deaktivieren (empfohlen)">
 <!ENTITY torbutton.prefs.headers "Headers">
-<!ENTITY torbutton.prefs.spoof_english "Englischen Browser (US) vortäuschen">
 <!ENTITY torbutton.prefs.refererspoofing "Absender tarnen">
 <!ENTITY torbutton.prefs.spoofblank "Einen leeren Absender vortäuschen, während Tor benutzt wird (kann einige Seiten ruinieren)">
 <!ENTITY torbutton.prefs.smartspoof "Intelligente Absendertarnung während der Benutzung von Tor (Vortäuschung verschiedener Domainabsender)">

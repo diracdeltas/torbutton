@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Sönərkən kukiləri silmə">
 <!ENTITY torbutton.prefs.disable_sessionstore "Yaddaşa verərkən söndür (məsləhətdir)">
 <!ENTITY torbutton.prefs.headers "Başlıqlar">
-<!ENTITY torbutton.prefs.spoof_english "ENG səyyahını dəyiş">
 <!ENTITY torbutton.prefs.refererspoofing "Referer spoofing">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referer spoof during Tor usage (spoofs cross domain referers)">

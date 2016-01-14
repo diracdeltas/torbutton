@@ -72,7 +72,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Не чисти моје колачиће при гашењу">
 <!ENTITY torbutton.prefs.disable_sessionstore "Онемогући чување сесије (препоручује се)">
 <!ENTITY torbutton.prefs.headers "Заглавља">
-<!ENTITY torbutton.prefs.spoof_english "Амерички енглески прегледач">
 <!ENTITY torbutton.prefs.refererspoofing "Маскирање упућивача">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Паметно маскирање упућивача када је Tor омогућен (маскира преко домена упућивача)">

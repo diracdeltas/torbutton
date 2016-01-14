@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Programı kapatığımda çerezlerim silinmesin">
 <!ENTITY torbutton.prefs.disable_sessionstore "Oturum Kaydedilmesin (önerilir)">
 <!ENTITY torbutton.prefs.headers "Üst Bilgiler">
-<!ENTITY torbutton.prefs.spoof_english "Amerikan İngilizce Web Tarayıcısı Aldatması">
 <!ENTITY torbutton.prefs.refererspoofing "Gönderici aldatması">
 <!ENTITY torbutton.prefs.spoofblank "Tor kullanılırken boş gönderici aldatması yapılsın (bazı sitelerde çalışmayabilir)">
 <!ENTITY torbutton.prefs.smartspoof "Tor kullanılırken akıllı gönderici aldatması yapılsın (siteler arası göndericileri değiştirir)">

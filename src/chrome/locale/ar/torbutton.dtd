@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "لا تمسح ملفات تعريف الارتباط (كوكيز) عند إغلاق المتصفح">
 <!ENTITY torbutton.prefs.disable_sessionstore "عطّل حفظ الجلسة (محبّذ)">
 <!ENTITY torbutton.prefs.headers "الترويسات">
-<!ENTITY torbutton.prefs.spoof_english "انتحل صفة متصفح إنجليزي أمريكي">
 <!ENTITY torbutton.prefs.refererspoofing "تزييف المرجع">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "محاكاة ساخرة ذكية للتحويل أثناء عمل تور (سخرية المجال المرجعي المتقاطع)">

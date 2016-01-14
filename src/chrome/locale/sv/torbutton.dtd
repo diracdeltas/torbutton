@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Rensa inte mina kakor vid avstängning">
 <!ENTITY torbutton.prefs.disable_sessionstore "Inaktivera Sessionssparande (rekommenderas)">
 <!ENTITY torbutton.prefs.headers "Huvuden">
-<!ENTITY torbutton.prefs.spoof_english "Härma US Engelsk Webbläsare">
 <!ENTITY torbutton.prefs.refererspoofing "Refererings härmning">
 <!ENTITY torbutton.prefs.spoofblank "Spoof blank referer during Tor usage (may break some sites)">
 <!ENTITY torbutton.prefs.smartspoof "Smart referat härmning under Tor användning (härmar kors domän referat)">

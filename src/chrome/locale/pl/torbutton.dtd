@@ -74,7 +74,6 @@
 <!ENTITY torbutton.prefs.no_shutdown "Nie usuwaj ciasteczek przy wyłączaniu">
 <!ENTITY torbutton.prefs.disable_sessionstore "Blokuj zapisywanie sesji przeglądarki (zalecane)">
 <!ENTITY torbutton.prefs.headers "Nagłówki">
-<!ENTITY torbutton.prefs.spoof_english "Udawaj przeglądarkę z USA">
 <!ENTITY torbutton.prefs.refererspoofing "Fałszowanie adresu zwrotnego">
 <!ENTITY torbutton.prefs.spoofblank "Wysyłaj pusty adres zwrotny w czasie używania Tora (może zepsuć niektóre strony)">
 <!ENTITY torbutton.prefs.smartspoof "Mądrze fałszuj adres zwrotny w czasie używania Tora (fałszuje odnośniki między stronami)">
