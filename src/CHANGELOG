@@ -23,6 +23,21 @@
  * Bug 16797: brandShorterName is missing from brand.properties
  * Translation updates
 
+1.9.3.7
+ * Bug 16990: Avoid matching '250 ' to the end of node name
+ * Bug 17565: Tor fundraising campaign donation banner
+ * Bug 17770: Fix alignments on donation banner
+ * Bug 17792: Include donation banner in some non en-US Tor Browsers
+ * Translation updates
+
+1.9.3.5
+ * Bug 9623: Spoof Referer when leaving a .onion domain
+ * Bug 16735: about:tor should accommodate different fonts/font sizes
+ * Bug 16937: Don't translate the hompepage/spellchecker dictionary string
+ * Bug 17164: Don't show text-select cursor on circuit display
+ * Bug 17351: Remove unused code
+ * Translation updates
+
 1.9.3.4
  * Bug 16887: Update intl.accept_languages value
  * Bug 15493: Update circuit display on new circuit info
