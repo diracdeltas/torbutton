@@ -9,7 +9,11 @@
  * Bug 16990: Show circuit display for connections using multi-party channels
  * Bug 18019: Avoid empty prompt shown after non-en-US update
  * Bug 18004: Remove Tor fundraising donation banner
- * Code cleanup
+ * Bug 16940: After update, load local change notes
+ * Bug 17108: Polish about:tor appearance
+ * Bug 17568: Clean up tor-control-port.js
+ * Bug 16620: Move window.name handling into a Firefox patch
+ * Bug 17351: Code cleanup
  * Translation updates
 
 1.9.4.2
