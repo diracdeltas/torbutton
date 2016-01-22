@@ -13,9 +13,9 @@
 <!ENTITY aboutTor.check.label "Tor Ağ Ayarlarını Sınayın">
 
 <!ENTITY aboutTor.success.label "Tor Browser'a Hoş Geldiniz">
-<!ENTITY aboutTor.success2.label "Tor ağına bağlanın.">
-<!ENTITY aboutTor.success3.label "Artık Internet'te özgürce ve anonim olarak dolaşabilirsiniz.">
-<!ENTITY aboutTor.failure.label "Birşeyler Ters Gitti!">
+<!ENTITY aboutTor.success2.label "Tor ağına bağlanıldı.">
+<!ENTITY aboutTor.success3.label "Artık İnternet'te özgürce ve anonim olarak dolaşabilirsiniz.">
+<!ENTITY aboutTor.failure.label "Bir Şeyler Ters Gitti!">
 <!ENTITY aboutTor.failure2.label "Tor bu tarayıcı ile çalışmıyor.">
 <!ENTITY aboutTor.failure3prefix.label "Yardım almak için bizimle görüşün">
 <!ENTITY aboutTor.failure3Link "help@rt.torproject.org">
@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "Tor Projesi, ABD 501(c)(3) kapsamında çevrim içi gizlilik ve mahremiyet üzerine araştırma, geliştirme ve eğitim çalışmaları yapan ve kar amacı gütmeyen bir kuruluştur.">
 <!ENTITY aboutTor.learnMore.label "Tor Projesi hakkında daha çok şey öğrenin »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Bağış Yapın">
-<!ENTITY aboutTor.donate.supportTor "Lütfen Tor Projesini Destekleyin!">

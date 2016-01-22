@@ -148,7 +148,7 @@
 <!ENTITY torbutton.prefs.block_disk "禁止记录浏览历史或网站数据（启用隐私浏览模式）">
 <!ENTITY torbutton.prefs.restrict_thirdparty "限制第三方 cookie 和其他数据跟踪程序">
 <!ENTITY torbutton.prefs.block_plugins "禁用浏览器插件（比如 Flash）">
-<!ENTITY torbutton.prefs.resist_fingerprinting "对相关 Tor 浏览器信息进行修改，以区别你与其他 Tor 用户">
+<!ENTITY torbutton.prefs.resist_fingerprinting "修改 Tor 浏览器中可区分你与其他 Tor 用户的细节信息">
 <!ENTITY torbutton.prefs.sec_caption "安全等级">
 <!ENTITY torbutton.prefs.sec_low "低（默认）">
 <!ENTITY torbutton.prefs.sec_low_usable_desc "该选项可提供最佳的用户体验。">

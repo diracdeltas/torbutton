@@ -6,17 +6,17 @@
 
 <!ENTITY aboutTor.title "Sobre o Tor">
 
-<!ENTITY aboutTor.outOfDateTorOn.label "WARNING: this browser is out of date.">
-<!ENTITY aboutTor.outOfDateTorOff.label "TAMBÉM, este navegador está desatualizado.">
-<!ENTITY aboutTor.outOfDate2.label "Clique na cebola e escolha 'Procurar atualizações do navegador Tor'">
+<!ENTITY aboutTor.outOfDateTorOn.label "AVISO: este navegador está desatualizado.">
+<!ENTITY aboutTor.outOfDateTorOff.label "Este navegador também está desatualizado.">
+<!ENTITY aboutTor.outOfDate2.label "Clique na cebola e escolha 'Procurar por atualizações do Navegador Tor'">
 
-<!ENTITY aboutTor.check.label "Testar as Configurações da Rede Tor">
+<!ENTITY aboutTor.check.label "Testar Configurações da Rede Tor">
 
-<!ENTITY aboutTor.success.label "Welcome to Tor Browser">
-<!ENTITY aboutTor.success2.label "Connected to the Tor network.">
-<!ENTITY aboutTor.success3.label "Agora já está livre para navegar na Internet anonimamente.">
-<!ENTITY aboutTor.failure.label "Ocorreu Algo de Errado!">
-<!ENTITY aboutTor.failure2.label "O Tor não está  a funcionar neste navegador.">
+<!ENTITY aboutTor.success.label "Bem-vindo ao Navegador Tor">
+<!ENTITY aboutTor.success2.label "Ligado à rede Tor.">
+<!ENTITY aboutTor.success3.label "Agora já está livre para navegar anonimamente na Internet.">
+<!ENTITY aboutTor.failure.label "Ocorreu algo de errado!">
+<!ENTITY aboutTor.failure2.label "O Tor não está a funcionar neste navegador.">
 <!ENTITY aboutTor.failure3prefix.label "Para assistência, por favor, contacte">
 <!ENTITY aboutTor.failure3Link "help@rt.torproject.org">
 <!ENTITY aboutTor.failure3suffix.label ".">
@@ -32,7 +32,7 @@
 <!ENTITY aboutTor.torInfo3.label "Nó de saída:">
 <!ENTITY aboutTor.torInfo4.label "Este servidor não regista qualquer informação sobre os visitantes.">
 <!ENTITY aboutTor.whatnextQuestion.label "E a seguir?">
-<!ENTITY aboutTor.whatnextAnswer.label "O Tor NÃO é tudo o que precisa para navegar anonimamente na Internet! Poderá ter que mudar alguns dos seus hábitos de navegação para ter a certeza que a sua identidade está segura.">
+<!ENTITY aboutTor.whatnextAnswer.label "O Tor NÃO é tudo o que precisa para navegar anonimamente! Poderá ter que alterar alguns dos seus hábitos de navegação para assegurar que a sua identidade fica segura.">
 <!ENTITY aboutTor.whatnext.label "Dicas Sobre Como se Manter Anónimo »">
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.helpInfo1.label "Você Pode Ajudar!">
@@ -44,9 +44,6 @@
 <!ENTITY aboutTor.helpInfo5.label "Efetue um Donativo »">
 <!ENTITY aboutTor.helpInfo5.link "https://www.torproject.org/donate/donate.html.en">
 
-<!ENTITY aboutTor.footer.label "O Projeto Tor é uma organização sem fins lucrativos US 501(c)(3) dedicada à investigação, desenvolvimento e promoção de anonimato e privacidade on-line.">
+<!ENTITY aboutTor.footer.label "O Projeto Tor é uma organização sem fins lucrativos US 501(c)(3), dedicada à investigação, desenvolvimento e promoção do anonimato e privacidade on-line.">
 <!ENTITY aboutTor.learnMore.label "Saber mais sobre o Projeto Tor »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Doar">
-<!ENTITY aboutTor.donate.supportTor "Please support Tor!">

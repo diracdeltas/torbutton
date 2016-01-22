@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "Le projet Tor est une organisation à but non lucratif (US 501(c)(3)) dédiée à la recherche, le développement et l'éducation sur l'anonymat et la vie privée en ligne.">
 <!ENTITY aboutTor.learnMore.label "En savoir plus sur le projet Tor »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html">
-
-<!ENTITY aboutTor.donate.donate "Faire une donation">
-<!ENTITY aboutTor.donate.supportTor "Merci de soutenir Tor !">

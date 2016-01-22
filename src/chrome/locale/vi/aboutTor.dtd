@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "Dự án Tor là một US 501(c)(3) không lợi nhuận chuyên dùng cho nghiên cứu, phát triển và giao dục về vô danh và riêng tư trực tuyến">
 <!ENTITY aboutTor.learnMore.label "Tìm hiểu thêm về Tor Project">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Donate">
-<!ENTITY aboutTor.donate.supportTor "Please support Tor!">

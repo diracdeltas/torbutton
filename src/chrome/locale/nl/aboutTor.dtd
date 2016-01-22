@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "Het Tor Project is een US 501(c)(3) non-profit voor onderzoek, ontwikkeling, onderwijs in online anonimiteit en privacy.">
 <!ENTITY aboutTor.learnMore.label "Leer meer over Het Tor  Project » ">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Doneer">
-<!ENTITY aboutTor.donate.supportTor "Steun a.u.b. Tor!">

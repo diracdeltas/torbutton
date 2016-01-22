@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "Die Organisation »The Tor Project« ist nach dem US-Gesetz US 501(c)(3) als gemeinnützig eingestuft und widmet sich der Forschung, der Entwicklung und der Schulung zum Thema Internetanonymität und Datenschutz.">
 <!ENTITY aboutTor.learnMore.label "Mehr über das Tor-Projekt erfahren »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Spenden">
-<!ENTITY aboutTor.donate.supportTor "Bitte unterstützen Sie Tor!">

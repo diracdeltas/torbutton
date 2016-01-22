@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "The Tor Project 是一家美国 501(c)(3) 非营利组织，致力于在线匿名与隐私的研究、开发与教育。">
 <!ENTITY aboutTor.learnMore.label "了解更多有关 The Tor Project 的信息 »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "捐款">
-<!ENTITY aboutTor.donate.supportTor "请支持 Tor！">

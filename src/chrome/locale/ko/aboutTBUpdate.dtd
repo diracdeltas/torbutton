@@ -1,6 +1,6 @@
-<!ENTITY aboutTBUpdate.title "Tor Browser Update">
-<!ENTITY aboutTBUpdate.updated "Tor Browser has been updated.">
-<!ENTITY aboutTBUpdate.linkPrefix "For the most up-to-date information about this release, ">
-<!ENTITY aboutTBUpdate.linkLabel  "visit our website">
+<!ENTITY aboutTBUpdate.title "Tor 브라우저 업데이트">
+<!ENTITY aboutTBUpdate.updated "Tor 브라우저가 업데이트되었습니다.">
+<!ENTITY aboutTBUpdate.linkPrefix "이번 업데이트에 대해 더 알고 싶으시면">
+<!ENTITY aboutTBUpdate.linkLabel  "저희 사이트를 방문해 주세요">
 <!ENTITY aboutTBUpdate.linkSuffix " ">
-<!ENTITY aboutTBUpdate.changeLogHeading "Changelog:">
+<!ENTITY aboutTBUpdate.changeLogHeading "변경사항:">

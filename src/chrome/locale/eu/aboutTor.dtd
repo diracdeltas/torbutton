@@ -47,6 +47,3 @@
 <!ENTITY aboutTor.footer.label "The Tor Project irabazi asmorik gabeko US 501(c)(3) bat da, ikerketara, garapenera, eta onlineko anonimotasuna eta pribatutasunaren hezkuntzara zuzendutakoa.">
 <!ENTITY aboutTor.learnMore.label "The Tor Projecti buruz gehiago ikasi »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">
-
-<!ENTITY aboutTor.donate.donate "Egizu dohaintza">
-<!ENTITY aboutTor.donate.supportTor "Please support Tor!">
