@@ -1023,7 +1023,8 @@ function torbutton_adjust_abouttor_fontsizes(aDoc, aContainerName)
 }
 
 // Determine X position of torbutton toolbar item and pass it through
-// to the xhtml document.
+// to the xhtml document by setting a torbutton-xpos attribute on the body.
+// The value that is set takes retina displays and content zoom into account.
 function torbutton_update_abouttor_arrow(aDoc) {
   try {
     let tbXpos = -1;
@@ -1033,15 +1034,22 @@ function torbutton_update_abouttor_arrow(aDoc) {
       let contentElem = document.getElementById("content");
       let contentRect = contentElem.getBoundingClientRect();
       if (tbItemRect.top < contentRect.top) {
-        tbXpos = tbItemRect.left + (tbItemRect.width / 2.0) -
-                    contentElem.getBoundingClientRect().left;
+        tbXpos = tbItemRect.left + (tbItemRect.width / 2.0) - contentRect.left;
       }
     }
-    if (tbXpos >= 0) {
-     if ("devicePixelRatio" in window)     // FF18+
-       tbXpos *= window.devicePixelRatio;  // Convert to device pixels.
 
-      tbXpos = Math.round(tbXpos);
+    if (tbXpos >= 0) {
+      // Convert to device-independent units, compensating for retina display
+      // and content zoom that may be in effect on the about:tor page.
+      // Because window.devicePixelRatio always returns 1.0 for non-Chrome
+      // windows (see bug 13875), we use screenPixelsPerCSSPixel for the
+      // content window.
+      tbXpos *= window.devicePixelRatio;
+      let pixRatio = gBrowser.contentWindow
+                             .QueryInterface(Ci.nsIInterfaceRequestor)
+                             .getInterface(Ci.nsIDOMWindowUtils)
+                             .screenPixelsPerCSSPixel;
+      tbXpos = Math.round(tbXpos / pixRatio);
       aDoc.body.setAttribute("torbutton-xpos", tbXpos);
     } else {
       aDoc.body.removeAttribute("torbutton-xpos");
