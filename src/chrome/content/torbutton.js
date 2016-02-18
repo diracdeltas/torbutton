@@ -233,6 +233,9 @@ var torbutton_unique_pref_observer =
             case "extensions.torbutton.block_disk":
                 torbutton_update_disk_prefs();
                 break;
+            case "extensions.torbutton.use_nontor_proxy":
+                torbutton_use_nontor_proxy();
+                break;
             case "extensions.torbutton.resist_fingerprinting":
             case "extensions.torbutton.spoof_english":
                 torbutton_update_fingerprinting_prefs();
@@ -2004,11 +2007,41 @@ function torbutton_clear_image_caches()
   }
 }
 
+/* Called when we switch the use_nontor_proxy pref in either direction.
+ *
+ * Enables/disables domain isolation and NoScript ABE, and then does
+ * new identity
+ */
+function torbutton_use_nontor_proxy()
+{
+  let nontor_mode = m_tb_prefs.getBoolPref("extensions.torbutton.use_nontor_proxy");
+  let domainIsolator = Cc["@torproject.org/domain-isolator;1"]
+      .getService(Ci.nsISupports).wrappedJSObject;
+
+  if (m_tb_prefs.getBoolPref("extensions.torbutton.use_nontor_proxy")) {
+    // We need to enable ABE because non-tor proxies won't reject localhost
+    // and RFC1918, and we should block them. (The default ABE policy does this).
+    m_tb_prefs.setBoolPref("noscript.ABE.enabled", true);
+
+    // Disable domain isolation
+    domainIsolator.disableIsolation();
+  } else {
+    m_tb_prefs.setBoolPref("noscript.ABE.enabled", false);
+
+    domainIsolator.enableIsolation();
+  }
+
+  // Always reset our identity if the proxy has changed from tor
+  // to non-tor.
+  torbutton_do_new_identity();
+}
+
 function torbutton_do_tor_check()
 {
   let checkSvc = Cc["@torproject.org/torbutton-torCheckService;1"]
                    .getService(Ci.nsISupports).wrappedJSObject;
   if (checkSvc.kCheckNotInitiated != checkSvc.statusOfTorCheck ||
+      m_tb_prefs.getBoolPref("extensions.torbutton.use_nontor_proxy") ||
       !m_tb_prefs.getBoolPref("extensions.torbutton.test_enabled"))
     return; // Only do the check once.
 
@@ -3161,7 +3194,12 @@ function torbutton_close_window(event) {
         var enumerator = wm.getEnumerator("navigator:browser");
         while(enumerator.hasMoreElements()) {
             var win = enumerator.getNext();
-            if(win != window) {
+            // For some reason, when New Identity is called from a pref
+            // observer (ex: torbutton_use_nontor_proxy) on an ASAN build,
+            // we sometimes don't have this symbol set in the new window yet.
+            // However, the new window will run this init later in that case,
+            // as it does in the OSX case.
+            if(win != window && "torbutton_do_main_window_startup" in win) {
                 torbutton_log(3, "Found another window");
                 win.torbutton_do_main_window_startup();
                 m_tb_is_main_window = false;

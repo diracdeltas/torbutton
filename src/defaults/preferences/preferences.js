@@ -33,6 +33,7 @@ pref("extensions.torbutton.test_failed",false);
 pref("extensions.torbutton.no_proxies_on","");
 pref("extensions.torbutton.versioncheck_url","https://www.torproject.org/projects/torbrowser/RecommendedTBBVersions");
 pref("extensions.torbutton.versioncheck_enabled",true);
+pref("extensions.torbutton.use_nontor_proxy",false);
 
 // XXX: wtf prefs? These seem not actually connected, but govern
 // if user wants own tor proxy settings

@@ -53,6 +53,10 @@ let tor = tor || {};
 // A mutable map that records what nonce we are using for each domain.
 tor.noncesForDomains = {};
 
+// __tor.isolationEabled__.
+// A bool that controls if we use SOCKS auth for isolation or not.
+tor.isolationEnabled = true;
+
 // __tor.unknownDirtySince__.
 // Specifies when the current catch-all circuit was first used
 tor.unknownDirtySince = Date.now();
@@ -96,6 +100,9 @@ tor.newCircuitForDomain = function(domain) {
 // combination.
 tor.isolateCircuitsByDomain = function () {
   mozilla.registerProxyChannelFilter(function (aChannel, aProxy) {
+    if (!tor.isolationEnabled)
+      return aProxy;
+
     try {
       let channel = aChannel.QueryInterface(Ci.nsIChannel),
           firstPartyURI = mozilla.thirdPartyUtil.getFirstPartyURIFromChannel(channel, true)
@@ -145,11 +152,25 @@ DomainIsolator.prototype = {
   observe: function (subject, topic, data) {
     if (topic === "profile-after-change") {
       logger.eclog(3, "domain isolator: set up isolating circuits by domain");
+
+      let prefs =  Cc["@mozilla.org/preferences-service;1"]
+          .getService(Ci.nsIPrefBranch);
+      if (prefs.getBoolPref("extensions.torbutton.use_nontor_proxy")) {
+        tor.isolationEnabled = false;
+      }
       tor.isolateCircuitsByDomain();
     }
   },
   newCircuitForDomain: function (domain) {
     tor.newCircuitForDomain(domain);
+  },
+
+  enableIsolation: function() {
+    tor.isolationEnabled = true;
+  },
+
+  disableIsolation: function() {
+    tor.isolationEnabled = false;
   },
 
   wrappedJSObject: null

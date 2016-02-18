@@ -148,6 +148,10 @@ function torbutton_check_status() {
         return false;
     }
 
+    if (torprefs.getBoolPref("use_nontor_proxy")) {
+        return true;
+    }
+
     if (torbutton_check_socks_remote_dns())
          remote_dns = liveprefs.getBoolPref("socks_remote_dns");
     else
