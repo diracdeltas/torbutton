@@ -1115,10 +1115,6 @@ function torbutton_on_abouttor_load(aDoc) {
     m_tb_prefs.
       setBoolPref("extensions.torbutton.show_slider_notification", false);
   }
-
-  // OS-specific window maximization on start-up should be done by now. Disable
-  // the respective preference to make sure the user is seeing our notification.
-  m_tb_prefs.setBoolPref(k_tb_tor_resize_warn_pref, false);
 }
 
 function torbutton_is_abouttor_doc(aDoc) {
@@ -3428,6 +3424,11 @@ var torbutton_resizelistener =
               setTimeout(function() {
                            resizeInnerWindowTo(width, height);
                            quantizeBrowserSize(window, 100, 100);
+                           // OS-specific window maximization on start-up should
+                           // be done by now. Disable the respective preference
+                           // to make sure the user is seeing our notification.
+                           m_tb_prefs.setBoolPref(k_tb_tor_resize_warn_pref,
+                             false);
                          }, 0);
               mut_observer.disconnect();
             }
