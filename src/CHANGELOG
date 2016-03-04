@@ -1,3 +1,10 @@
+1.9.5.1
+ * Bug 16990: Don't mishandle multiline commands
+ * Bug 18144: about:tor update arrow position is wrong
+ * Bug 16725: Allow resizing with non-default homepage
+ * Bug 16017: Allow users to more easily set a non-tor SSH proxy
+ * Translation updates
+
 1.9.5
  * Bug 16990: Show circuit display for connections using multi-party channels
  * Bug 18019: Avoid empty prompt shown after non-en-US update

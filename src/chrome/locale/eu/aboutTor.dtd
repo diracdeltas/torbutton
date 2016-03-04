@@ -6,14 +6,14 @@
 
 <!ENTITY aboutTor.title "Tori buruz">
 
-<!ENTITY aboutTor.outOfDateTorOn.label "WARNING: this browser is out of date.">
+<!ENTITY aboutTor.outOfDateTorOn.label "KONUTZ: nabigatzaile hau zaharkituta dago.">
 <!ENTITY aboutTor.outOfDateTorOff.label "BAITA, nabigatzaile hau zaharkituta dago.">
 <!ENTITY aboutTor.outOfDate2.label "Tipulan sakatu eta ondoren Tor Browser Bundlea egiaztatu hautatu">
 
 <!ENTITY aboutTor.check.label "Tor sare ezarpenak frogatu">
 
-<!ENTITY aboutTor.success.label "Welcome to Tor Browser">
-<!ENTITY aboutTor.success2.label "Connected to the Tor network.">
+<!ENTITY aboutTor.success.label "Ongi etorri Tor Browserera">
+<!ENTITY aboutTor.success2.label "Tor sarera konektatuta.">
 <!ENTITY aboutTor.success3.label "Aske zara orain Internet anonimotasunez nabigatzeko.">
 <!ENTITY aboutTor.failure.label "Zerbait gaizki joan da!">
 <!ENTITY aboutTor.failure2.label "Tor ez da nabigatzaile honetan funtzionatzen ari.">
