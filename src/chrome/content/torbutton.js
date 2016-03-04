@@ -2014,7 +2014,6 @@ function torbutton_clear_image_caches()
  */
 function torbutton_use_nontor_proxy()
 {
-  let nontor_mode = m_tb_prefs.getBoolPref("extensions.torbutton.use_nontor_proxy");
   let domainIsolator = Cc["@torproject.org/domain-isolator;1"]
       .getService(Ci.nsISupports).wrappedJSObject;
 
