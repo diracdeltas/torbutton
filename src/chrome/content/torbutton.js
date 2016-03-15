@@ -253,7 +253,6 @@ var torbutton_unique_pref_observer =
             case "mathml.disabled":
             case "javascript.options.baselinejit.content":
             case "noscript.forbidFonts":
-            case "gfx.font_rendering.graphite.enabled":
             case "noscript.globalHttpsWhitelist":
             case "noscript.global":
             case "svg.in-content.enabled":
@@ -2327,7 +2326,6 @@ var torbutton_sec_ml_bool_prefs = {
 
 var torbutton_sec_mh_bool_prefs = {
   "javascript.options.baselinejit.content" : false,
-  "gfx.font_rendering.graphite.enabled" : false,
   "gfx.font_rendering.opentype_svg.enabled" : false,
   "noscript.global" : false,
   "noscript.globalHttpsWhitelist" : true
