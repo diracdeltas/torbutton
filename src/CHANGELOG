@@ -1,3 +1,6 @@
+1.9.5.2
+ * Bug 18557: Exempt Graphite preference from Security Slider
+
 1.9.4.5
  * Bug 18557: Exempt Graphite preference from Security Slider
 
